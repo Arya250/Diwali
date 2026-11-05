@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,8 +38,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Background */
-
 .page {
     min-height: 100vh;
     position: relative;
@@ -46,8 +45,6 @@ body {
     background:
     radial-gradient(ellipse at 50% 40%, #fffdf5 0%, #faf4e8 65%, #f0dfc4 100%);
 }
-
-/* Top Decoration */
 
 .top-decoration {
     height: 95px;
@@ -65,8 +62,6 @@ body {
     object-fit: cover;
     opacity: .65;
 }
-
-/* Main Card */
 
 .container {
     max-width: 760px;
@@ -101,8 +96,6 @@ h1 {
     margin: 24px auto;
 }
 
-/* Receiver Name */
-
 .receiver {
     font-family: 'Playfair Display', serif;
     color: var(--red);
@@ -123,8 +116,6 @@ h1 {
     max-width: 600px;
 }
 
-/* Festival Image */
-
 .festival-image {
     width: 100%;
     max-width: 550px;
@@ -143,8 +134,6 @@ h1 {
     object-fit: cover;
 }
 
-/* Wishes */
-
 .wishes {
     font-family: 'Tiro Devanagari Hindi', serif;
     font-size: 17px;
@@ -152,8 +141,6 @@ h1 {
     padding: 15px;
     color: #795343;
 }
-
-/* Diyas */
 
 .diya-row {
     display: flex;
@@ -166,8 +153,6 @@ h1 {
     font-size: 38px;
     filter: drop-shadow(0 5px 8px rgba(177,105,24,.25));
 }
-
-/* Personalize Section */
 
 .personalize {
     max-width: 500px;
@@ -230,8 +215,6 @@ button {
     background: #68251e;
 }
 
-/* Share Buttons */
-
 .share-area {
     display: none;
     margin-top: 20px;
@@ -268,8 +251,6 @@ button {
     background: #765342;
 }
 
-/* Footer */
-
 footer {
     margin-top: 55px;
     font-size: 11px;
@@ -277,7 +258,35 @@ footer {
     color: #a78a6a;
 }
 
-/* Popup */
+/* AD CONTAINERS */
+
+.ad-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.ad-160 {
+    width: 160px;
+    min-height: 300px;
+}
+
+.ad-468 {
+    width: 100%;
+    max-width: 468px;
+    min-height: 60px;
+}
+
+.ad-native {
+    width: 100%;
+    min-height: 100px;
+    margin: 30px auto;
+}
+
+/* POPUP */
 
 .popup-overlay {
     position: fixed;
@@ -315,6 +324,7 @@ footer {
         transform: translateY(35px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -383,17 +393,14 @@ footer {
 
 .play-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 9px 22px rgba(115,37,28,.35);
 }
 
-.popup .bottom-text {
-    margin-top: 20px;
-    color: #ae8952;
-    font-size: 10px;
-    letter-spacing: 3px;
+.play-btn:disabled {
+    opacity: .7;
+    cursor: wait;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 
 @media(max-width:600px) {
 
@@ -433,28 +440,35 @@ footer {
     .popup h2 {
         font-size: 26px;
     }
+
 }
 
 </style>
+
+<!-- ADSTERRA SOCIAL BAR -->
+<script data-cfasync="false"
+src="https://bicea.org/14/719821eb2eac23a12d27b664223bcfe5"></script>
+
 </head>
 
 <body>
 
-<!-- Welcome Popup -->
+<!-- WELCOME POPUP -->
 
 <div class="popup-overlay" id="welcomePopup">
 
     <div class="popup">
 
-        <div class="small-label">THE FESTIVAL OF LIGHTS</div>
+        <div class="small-label">
+            THE FESTIVAL OF LIGHTS
+        </div>
 
         <div class="god-images">
 
-            <!-- Add your own high quality deity images -->
-            <img src="assets/ganesh.png"
+            <img src="./assets/ganesh.png"
                  alt="Lord Ganesha">
 
-            <img src="assets/lakshmi.png"
+            <img src="./assets/lakshmi.png"
                  alt="Maa Lakshmi">
 
         </div>
@@ -480,14 +494,18 @@ footer {
 </div>
 
 
-<!-- Background Music -->
+<!-- BACKGROUND MUSIC -->
 
-<audio id="diwaliMusic" loop preload="auto">
-    <source src="assets/diwali.mp3" type="audio/mpeg">
+<audio
+    id="diwaliMusic"
+    src="./assets/diwali.mp3"
+    loop
+    preload="auto"
+    playsinline>
 </audio>
 
 
-<!-- Main Website -->
+<!-- MAIN WEBSITE -->
 
 <div class="page">
 
@@ -518,7 +536,7 @@ footer {
         </div>
 
 
-        <!-- Festival Image -->
+        <!-- FESTIVAL IMAGE -->
 
         <div class="festival-image">
 
@@ -526,6 +544,25 @@ footer {
             src="https://images.unsplash.com/photo-1606293926075-9a1f7c0b1c0b?auto=format&fit=crop&w=1200&q=85"
             alt="Diwali Celebration"
             onerror="this.style.display='none'">
+
+        </div>
+
+
+        <!-- AD 1: 160x300 BANNER -->
+
+        <div class="ad-container">
+
+            <script>
+            atOptions = {
+                'key' : '6149f5f9dae47770357628ab9ba10f84',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+            };
+            </script>
+
+            <script src="https://bicea.org/22/6149f5f9dae47770357628ab9ba10f84"></script>
 
         </div>
 
@@ -550,7 +587,20 @@ footer {
         </div>
 
 
-        <!-- Personalization -->
+        <!-- AD 2: NATIVE AD -->
+
+        <div class="ad-container ad-native">
+
+            <script async="async"
+            data-cfasync="false"
+            src="https://bicea.org/21/28089657cd1b267bcde4c51a51e1e904"></script>
+
+            <div id="container-28089657cd1b267bcde4c51a51e1e904"></div>
+
+        </div>
+
+
+        <!-- PERSONALIZATION -->
 
         <section class="personalize">
 
@@ -571,7 +621,6 @@ footer {
             <button class="create-btn" onclick="createLink()">
                 CREATE GREETING LINK
             </button>
-
 
             <div class="share-area" id="shareArea">
 
@@ -602,6 +651,25 @@ footer {
         </section>
 
 
+        <!-- AD 3: 468x60 BANNER -->
+
+        <div class="ad-container ad-468">
+
+            <script>
+            atOptions = {
+                'key' : 'd17a4b655cc0b77ea49bbbc8d3fd16c5',
+                'format' : 'iframe',
+                'height' : 60,
+                'width' : 468,
+                'params' : {}
+            };
+            </script>
+
+            <script src="https://bicea.org/22/d17a4b655cc0b77ea49bbbc8d3fd16c5"></script>
+
+        </div>
+
+
         <footer>
             MADE WITH LOVE & LIGHT 🪔
         </footer>
@@ -611,32 +679,86 @@ footer {
 </div>
 
 
+<!-- JAVASCRIPT -->
+
 <script>
 
-/* Welcome Popup and Music */
+/* =================================
+   WELCOME POPUP AND MUSIC
+================================= */
 
 const popup = document.getElementById("welcomePopup");
+
 const playButton = document.getElementById("playButton");
+
 const music = document.getElementById("diwaliMusic");
+
+let musicStarted = false;
+
+music.loop = true;
+
+music.volume = 0.8;
+
+
+/* Start music directly from click */
 
 playButton.addEventListener("click", async function() {
 
+    if (musicStarted) return;
+
+    playButton.disabled = true;
+
+    playButton.textContent = "LOADING MUSIC...";
+
     try {
 
-        await music.play();
+        // Preserve the original user click activation.
+        // Do not call music.load() here.
+
+        const playback = music.play();
+
+        await playback;
+
+        musicStarted = true;
+
+        playButton.textContent = "♪ MUSIC PLAYING";
 
         popup.classList.add("hide");
 
-    } catch(error) {
+    }
 
-        alert("Unable to play music. Please check your music file.");
+    catch(error) {
+
+        console.error("Music Error:", error);
+
+        playButton.disabled = false;
+
+        playButton.textContent = "TAP TO PLAY SONG";
+
+        alert(
+            "Music could not play. Check assets/diwali.mp3 and try again."
+        );
 
     }
 
 });
 
 
-/* Personalised Greeting */
+/* Audio loading error */
+
+music.addEventListener("error", function() {
+
+    console.error(
+        "Audio file error:",
+        music.error
+    );
+
+});
+
+
+/* =================================
+   PERSONALISED GREETING
+================================= */
 
 const params = new URLSearchParams(window.location.search);
 
@@ -651,7 +773,9 @@ if(receiver) {
 }
 
 
-/* Create Personalised Link */
+/* =================================
+   CREATE PERSONALISED LINK
+================================= */
 
 let currentLink = "";
 
@@ -680,7 +804,9 @@ function createLink() {
 }
 
 
-/* WhatsApp Share */
+/* =================================
+   WHATSAPP SHARE
+================================= */
 
 function shareWhatsApp() {
 
@@ -701,13 +827,16 @@ function shareWhatsApp() {
 }
 
 
-/* Telegram Share */
+/* =================================
+   TELEGRAM SHARE
+================================= */
 
 function shareTelegram() {
 
     if(!currentLink) return;
 
-    const message = "🪔 Happy Diwali! Special wishes for you ❤️";
+    const message =
+    "🪔 Happy Diwali! Special wishes for you ❤️";
 
     window.open(
         "https://t.me/share/url?url=" +
@@ -720,7 +849,9 @@ function shareTelegram() {
 }
 
 
-/* Copy Link */
+/* =================================
+   COPY LINK
+================================= */
 
 async function copyLink() {
 
@@ -732,11 +863,15 @@ async function copyLink() {
 
         alert("Greeting link copied successfully! 🪔");
 
-    } catch(error) {
+    }
+
+    catch(error) {
 
         const input = document.getElementById("generatedLink");
 
         input.select();
+
+        input.setSelectionRange(0, 99999);
 
         document.execCommand("copy");
 
