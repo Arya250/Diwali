@@ -15,12 +15,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
 
-
-<!-- ADSTERRA SOCIAL BAR -->
-
-<script data-cfasync="false"
-src="https://bicea.org/14/719821eb2eac23a12d27b664223bcfe5"></script>
-
+<!-- POPUP AD -->
+<script data-cfasync="false" src="https://afders.org/1/7c456170e29c54e13131104574435e3b"></script>
 
 <style>
 
@@ -45,8 +41,6 @@ body {
     font-family: 'DM Sans', sans-serif;
     overflow-x: hidden;
 }
-
-/* BACKGROUND */
 
 .page {
     min-height: 100vh;
@@ -77,8 +71,6 @@ body {
     );
 }
 
-/* MAIN CONTAINER */
-
 .container {
     max-width: 760px;
     margin: auto;
@@ -96,8 +88,6 @@ body {
     text-transform: uppercase;
 }
 
-/* HEADING */
-
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(39px, 8vw, 66px);
@@ -114,8 +104,6 @@ h1 {
     margin: 24px auto;
 }
 
-/* RECEIVER */
-
 .receiver {
     font-family: 'Playfair Display', serif;
     color: var(--red);
@@ -129,8 +117,6 @@ h1 {
     0 3px 15px rgba(143,48,40,.10);
 }
 
-/* GREETING */
-
 .greeting {
     font-family: 'Tiro Devanagari Hindi', serif;
     font-size: 20px;
@@ -139,8 +125,6 @@ h1 {
     margin: 15px auto;
     max-width: 600px;
 }
-
-/* FESTIVAL IMAGE */
 
 .festival-image {
     width: 100%;
@@ -152,7 +136,6 @@ h1 {
 
     border-radius: 5px;
     overflow: hidden;
-
     position: relative;
 
     box-shadow:
@@ -170,8 +153,6 @@ h1 {
     display: block;
 }
 
-/* WISHES */
-
 .wishes {
     font-family: 'Tiro Devanagari Hindi', serif;
     font-size: 17px;
@@ -179,8 +160,6 @@ h1 {
     padding: 15px;
     color: #795343;
 }
-
-/* DIYAS */
 
 .diya-row {
     display: flex;
@@ -197,8 +176,6 @@ h1 {
         0 5px 8px rgba(177,105,24,.25)
     );
 }
-
-/* PERSONALIZATION */
 
 .personalize {
     max-width: 500px;
@@ -252,8 +229,6 @@ button {
     font-family: inherit;
 }
 
-/* CREATE BUTTON */
-
 .create-btn {
     background: var(--red);
     color: white;
@@ -273,8 +248,6 @@ button {
 .create-btn:hover {
     background: #68251e;
 }
-
-/* SHARE AREA */
 
 .share-area {
     display: none;
@@ -314,23 +287,15 @@ button {
     background: #765342;
 }
 
-/* AD CONTAINERS */
+/* ONLY 468x60 BANNER */
 
 .ad-container {
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin: 30px auto;
-
+    margin: 35px auto;
     overflow: hidden;
-}
-
-.ad-160 {
-    width: 160px;
-    min-height: 300px;
 }
 
 .ad-468 {
@@ -339,20 +304,12 @@ button {
     min-height: 60px;
 }
 
-.ad-native {
-    width: 100%;
-    min-height: 100px;
-    margin: 30px auto;
-}
-
 /* FOOTER */
 
 footer {
     margin-top: 55px;
-
     font-size: 11px;
     letter-spacing: 3px;
-
     color: #a78a6a;
 }
 
@@ -361,7 +318,6 @@ footer {
 .popup-overlay {
     position: fixed;
     inset: 0;
-
     z-index: 1000;
 
     background: rgba(39, 19, 13, .78);
@@ -371,12 +327,9 @@ footer {
     justify-content: center;
 
     padding: 18px;
-
     backdrop-filter: blur(7px);
 
-    transition:
-    opacity .7s,
-    visibility .7s;
+    transition: opacity .7s, visibility .7s;
 }
 
 .popup-overlay.hide {
@@ -390,7 +343,6 @@ footer {
     max-width: 420px;
 
     background: #fff8e9;
-
     border: 5px double #bd984f;
 
     padding: 25px 22px 30px;
@@ -398,8 +350,7 @@ footer {
     text-align: center;
     position: relative;
 
-    box-shadow:
-    0 25px 70px rgba(0,0,0,.3);
+    box-shadow: 0 25px 70px rgba(0,0,0,.3);
 
     animation: popupIn .7s ease;
 }
@@ -421,9 +372,7 @@ footer {
 .popup::before,
 .popup::after {
     content: "✦";
-
     position: absolute;
-
     color: var(--gold);
     font-size: 25px;
 }
@@ -438,62 +387,40 @@ footer {
     right: 12px;
 }
 
-/* GOD IMAGES */
-
 .god-images {
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 12px;
-
     margin: 15px auto 20px;
 }
 
 .god-images img {
     width: 105px;
     height: 115px;
-
     object-fit: contain;
 }
 
-/* POPUP TEXT */
-
 .popup h2 {
     font-family: 'Playfair Display', serif;
-
     font-size: 30px;
-
     color: var(--red);
-
     margin-bottom: 12px;
 }
 
 .popup .hindi {
     font-family: 'Tiro Devanagari Hindi', serif;
-
     font-size: 17px;
     line-height: 1.9;
-
     color: #775443;
-
     margin-bottom: 20px;
 }
 
-/* PLAY BUTTON */
-
 .play-btn {
-    background:
-    linear-gradient(
-        135deg,
-        #a33c2d,
-        #70251d
-    );
-
+    background: linear-gradient(135deg, #a33c2d, #70251d);
     color: #fff9e9;
 
     padding: 17px 30px;
-
     width: 100%;
 
     font-size: 14px;
@@ -502,9 +429,7 @@ footer {
 
     border-radius: 3px;
 
-    box-shadow:
-    0 6px 18px rgba(115,37,28,.25);
-
+    box-shadow: 0 6px 18px rgba(115,37,28,.25);
     transition: .3s;
 }
 
@@ -519,14 +444,12 @@ footer {
 
 .bottom-text {
     margin-top: 20px;
-
     color: #ae8952;
-
     font-size: 10px;
     letter-spacing: 3px;
 }
 
-/* MOBILE RESPONSIVE */
+/* MOBILE */
 
 @media(max-width:600px) {
 
@@ -573,13 +496,9 @@ footer {
 
 </head>
 
-
 <body>
 
-
-<!-- =================================
-     WELCOME POPUP
-================================= -->
+<!-- WELCOME POPUP -->
 
 <div class="popup-overlay" id="welcomePopup">
 
@@ -591,15 +510,9 @@ footer {
 
         <div class="god-images">
 
-            <img
-                src="./assets/ganesh.png"
-                alt="Lord Ganesha"
-            >
+            <img src="./assets/ganesh.png" alt="Lord Ganesha">
 
-            <img
-                src="./assets/lakshmi.png"
-                alt="Maa Lakshmi"
-            >
+            <img src="./assets/lakshmi.png" alt="Maa Lakshmi">
 
         </div>
 
@@ -616,43 +529,26 @@ footer {
         </div>
 
         <button class="play-btn" id="playButton">
-
             🎵 &nbsp; PLAY SONG
-
         </button>
 
         <div class="bottom-text">
-
             LIGHT • LOVE • HAPPINESS
-
         </div>
 
     </div>
 
 </div>
 
+<!-- BACKGROUND MUSIC -->
 
-<!-- =================================
-     BACKGROUND MUSIC
-================================= -->
+<audio id="diwaliMusic" loop preload="auto" playsinline>
 
-<audio
-    id="diwaliMusic"
-    loop
-    preload="auto"
-    playsinline>
-
-    <source
-        src="./assets/diwali.mp3"
-        type="audio/mpeg"
-    >
+    <source src="./assets/diwali.mp3" type="audio/mpeg">
 
 </audio>
 
-
-<!-- =================================
-     MAIN WEBSITE
-================================= -->
+<!-- MAIN WEBSITE -->
 
 <div class="page">
 
@@ -660,53 +556,34 @@ footer {
 
     <main class="container">
 
-
         <div class="small-label">
-
             A CELEBRATION OF LIGHT & HAPPINESS
-
         </div>
 
-
         <h1>
-
             HAPPY<br>
             DIWALI
-
         </h1>
-
 
         <div class="gold-line"></div>
 
-
         <div class="small-label">
-
             SPECIAL WISHES FOR
-
         </div>
-
 
         <div class="receiver" id="receiverName">
-
             EVERYONE
-
         </div>
-
 
         <div class="greeting">
 
             दीपों का यह पावन त्योहार आपके जीवन में<br>
-
             सुख, शांति, समृद्धि और खुशियाँ लेकर आए।<br>
-
             आपके हर सपने को नई उड़ान मिले।
 
         </div>
 
-
-        <!-- =================================
-             NEW LAKSHMI GANESH IMAGE
-        ================================= -->
+        <!-- FESTIVAL IMAGE -->
 
         <div class="festival-image">
 
@@ -718,57 +595,40 @@ footer {
 
         </div>
 
+        <!-- AD 1: 468x60 BANNER -->
 
-        <!-- =================================
-             AD 1 - 160x300
-        ================================= -->
-
-        <div class="ad-container">
+        <div class="ad-container ad-468">
 
             <script>
-
-            atOptions = {
-
-                'key' : '6149f5f9dae47770357628ab9ba10f84',
-
-                'format' : 'iframe',
-
-                'height' : 300,
-
-                'width' : 160,
-
-                'params' : {}
-
-            };
-
+                atOptions = {
+                    'key': 'd17a4b655cc0b77ea49bbbc8d3fd16c5',
+                    'format': 'iframe',
+                    'height': 60,
+                    'width': 468,
+                    'params': {}
+                };
             </script>
 
-            <script src="https://bicea.org/22/6149f5f9dae47770357628ab9ba10f84"></script>
+            <script src="https://bicea.org/22/d17a4b655cc0b77ea49bbbc8d3fd16c5"></script>
 
         </div>
-
 
         <!-- DIYAS -->
 
         <div class="diya-row">
 
             <span class="diya">🪔</span>
-
             <span class="diya">✨</span>
-
             <span class="diya">🪔</span>
 
         </div>
-
 
         <!-- WISHES -->
 
         <div class="wishes">
 
             यह दिवाली आपके घर को रोशनी से,<br>
-
             आपके दिल को खुशियों से और<br>
-
             आपके जीवन को सफलता से भर दे।<br><br>
 
             आप और आपका परिवार हमेशा खुश रहें।<br>
@@ -777,113 +637,49 @@ footer {
 
         </div>
 
-
-        <!-- =================================
-             AD 2 - NATIVE AD
-        ================================= -->
-
-        <div class="ad-container ad-native">
-
-            <script
-                async="async"
-                data-cfasync="false"
-                src="https://bicea.org/21/28089657cd1b267bcde4c51a51e1e904">
-            </script>
-
-            <div id="container-28089657cd1b267bcde4c51a51e1e904"></div>
-
-        </div>
-
-
-        <!-- =================================
-             PERSONALIZATION
-        ================================= -->
+        <!-- PERSONALIZATION -->
 
         <section class="personalize">
 
-            <h2>
-
-                Send a Special Wish
-
-            </h2>
+            <h2>Send a Special Wish</h2>
 
             <p>
-
                 Enter someone's name and create a personalised
                 Diwali greeting link.
-
             </p>
 
-
             <input
-
                 type="text"
-
                 id="nameInput"
-
                 placeholder="Enter receiver's name..."
-
                 maxlength="40"
-
             >
 
-
-            <button
-                class="create-btn"
-                onclick="createLink()">
-
+            <button class="create-btn" onclick="createLink()">
                 CREATE GREETING LINK
-
             </button>
 
-
-            <!-- SHARE AREA -->
-
-            <div
-                class="share-area"
-                id="shareArea">
-
+            <div class="share-area" id="shareArea">
 
                 <input
-
                     type="text"
-
                     id="generatedLink"
-
                     readonly
-
                 >
-
 
                 <div class="share-buttons">
 
-
-                    <button
-                        class="whatsapp"
-                        onclick="shareWhatsApp()">
-
+                    <button class="whatsapp" onclick="shareWhatsApp()">
                         WhatsApp
-
                     </button>
 
-
-                    <button
-                        class="telegram"
-                        onclick="shareTelegram()">
-
+                    <button class="telegram" onclick="shareTelegram()">
                         Telegram
-
                     </button>
 
-
-                    <button
-                        class="copy"
-                        onclick="copyLink()">
-
+                    <button class="copy" onclick="copyLink()">
                         Copy Link
-
                     </button>
-
 
                 </div>
 
@@ -891,60 +687,21 @@ footer {
 
         </section>
 
-
-        <!-- =================================
-             AD 3 - 468x60
-        ================================= -->
-
-        <div class="ad-container ad-468">
-
-            <script>
-
-            atOptions = {
-
-                'key' : 'd17a4b655cc0b77ea49bbbc8d3fd16c5',
-
-                'format' : 'iframe',
-
-                'height' : 60,
-
-                'width' : 468,
-
-                'params' : {}
-
-            };
-
-            </script>
-
-            <script src="https://bicea.org/22/d17a4b655cc0b77ea49bbbc8d3fd16c5"></script>
-
-        </div>
-
-
         <!-- FOOTER -->
 
         <footer>
-
             MADE WITH LOVE & LIGHT 🪔
-
         </footer>
-
 
     </main>
 
 </div>
 
-
-<!-- =================================
-     JAVASCRIPT
-================================= -->
+<!-- JAVASCRIPT -->
 
 <script>
 
-
-/* =================================
-   WELCOME POPUP AND MUSIC
-================================= */
+/* WELCOME POPUP AND MUSIC */
 
 const popup = document.getElementById("welcomePopup");
 
@@ -954,42 +711,23 @@ const music = document.getElementById("diwaliMusic");
 
 let musicStarted = false;
 
-
-/* MUSIC SETTINGS */
-
 music.loop = true;
-
 music.volume = 0.8;
-
-
-/* PLAY MUSIC */
 
 playButton.addEventListener("click", async function() {
 
     if (musicStarted) return;
 
     playButton.disabled = true;
-
     playButton.textContent = "LOADING MUSIC...";
 
     try {
 
-        /*
-          Music starts directly from the user's click.
-          No delayed autoplay request.
-        */
-
-        const playPromise = music.play();
-
-        await playPromise;
+        await music.play();
 
         musicStarted = true;
 
         playButton.textContent = "♪ MUSIC PLAYING";
-
-        /*
-          Hide popup only after successful playback.
-        */
 
         popup.classList.add("hide");
 
@@ -1004,29 +742,20 @@ playButton.addEventListener("click", async function() {
         playButton.textContent = "TAP TO PLAY SONG";
 
         alert(
-            "Unable to play music. Please check that assets/diwali.mp3 exists and is a valid MP3 file."
+            "Unable to play music. Please check that assets/diwali.mp3 exists."
         );
 
     }
 
 });
 
-
-/* AUDIO ERROR */
-
 music.addEventListener("error", function() {
 
-    console.error(
-        "Audio file could not be loaded.",
-        music.error
-    );
+    console.error("Audio file could not be loaded.", music.error);
 
 });
 
-
-/* =================================
-   PERSONALISED GREETING
-================================= */
+/* PERSONALIZED GREETING */
 
 const params = new URLSearchParams(window.location.search);
 
@@ -1040,10 +769,7 @@ if(receiver) {
 
 }
 
-
-/* =================================
-   CREATE PERSONALISED LINK
-================================= */
+/* CREATE PERSONALIZED LINK */
 
 let currentLink = "";
 
@@ -1071,10 +797,7 @@ function createLink() {
 
 }
 
-
-/* =================================
-   WHATSAPP SHARE
-================================= */
+/* WHATSAPP SHARE */
 
 function shareWhatsApp() {
 
@@ -1083,58 +806,36 @@ function shareWhatsApp() {
     const name = document.getElementById("nameInput").value.trim();
 
     const message =
-
         "🪔 Happy Diwali " + name + "!\n\n" +
-
         "आपके लिए एक खास दिवाली संदेश ❤️\n\n" +
-
         currentLink;
 
-
     window.open(
-
         "https://wa.me/?text=" + encodeURIComponent(message),
-
         "_blank"
-
     );
 
 }
 
-
-/* =================================
-   TELEGRAM SHARE
-================================= */
+/* TELEGRAM SHARE */
 
 function shareTelegram() {
 
     if(!currentLink) return;
 
-    const message =
-
-        "🪔 Happy Diwali! Special wishes for you ❤️";
-
+    const message = "🪔 Happy Diwali! Special wishes for you ❤️";
 
     window.open(
-
         "https://t.me/share/url?url=" +
-
         encodeURIComponent(currentLink) +
-
         "&text=" +
-
         encodeURIComponent(message),
-
         "_blank"
-
     );
 
 }
 
-
-/* =================================
-   COPY LINK
-================================= */
+/* COPY LINK */
 
 async function copyLink() {
 
@@ -1166,13 +867,5 @@ async function copyLink() {
 
 </script>
 
-
-<!-- =================================
-     AD 4 - SOCIAL BAR
-================================= -->
-
-<!-- Already loaded in HEAD -->
-
 </body>
-
 </html>
