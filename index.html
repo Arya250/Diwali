@@ -1,701 +1,750 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Diwali Wishes 🪔</title>
+
+<title>Happy Diwali | A Festival of Lights</title>
+
+<meta name="theme-color" content="#f8f0df">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+:root {
+    --cream: #faf4e8;
+    --dark: #54251e;
+    --red: #8f3028;
+    --gold: #b58a42;
+    --light-gold: #e8d4a6;
+    --text: #57382e;
 }
 
-body{
-    min-height:100vh;
-    overflow-x:hidden;
-    color:#fff1c2;
-    text-align:center;
-    font-family:Georgia,serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Background */
+
+.page {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
     background:
-      radial-gradient(ellipse at top,#9b3100 0%,#4b1000 48%,#170300 100%);
+    radial-gradient(ellipse at 50% 40%, #fffdf5 0%, #faf4e8 65%, #f0dfc4 100%);
 }
 
-/* Golden background decoration */
+/* Top Decoration */
 
-body:before{
-    content:"";
-    position:fixed;
-    inset:0;
-    pointer-events:none;
+.top-decoration {
+    height: 95px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background:
-      radial-gradient(circle at 10% 20%,#ffbd3530,transparent 25%),
-      radial-gradient(circle at 90% 60%,#ff8c0025,transparent 30%);
+    linear-gradient(180deg, rgba(116,40,30,.12), transparent);
 }
 
-#fireworks{
-    position:fixed;
-    inset:0;
-    width:100%;
-    height:100%;
-    pointer-events:none;
-    z-index:1;
+.top-decoration img {
+    width: 100%;
+    height: 95px;
+    object-fit: cover;
+    opacity: .65;
 }
 
-.container{
-    position:relative;
-    z-index:2;
-    max-width:700px;
-    width:94%;
-    margin:auto;
-    padding:45px 12px 55px;
+/* Main Card */
+
+.container {
+    max-width: 760px;
+    margin: auto;
+    padding: 75px 20px 45px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
-/* Decorative border */
-
-.card{
-    border:2px solid #e8b84d;
-    border-radius:25px;
-    padding:28px 15px;
-    background:linear-gradient(
-      145deg,
-      #681900e8,
-      #310900ed
-    );
-    box-shadow:
-      0 0 25px #ff9e0060,
-      inset 0 0 25px #ffb52c20;
+.small-label {
+    color: var(--gold);
+    letter-spacing: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-/* Heading */
-
-.top{
-    font-size:19px;
-    color:#ffe5a0;
-    letter-spacing:2px;
-    margin-bottom:22px;
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(39px, 8vw, 66px);
+    line-height: 1.15;
+    color: var(--dark);
+    margin-top: 18px;
+    font-weight: 700;
 }
 
-h1{
-    font-size:clamp(42px,10vw,76px);
-    color:#ffe08a;
-    text-shadow:
-      0 0 10px #ffb300,
-      0 0 25px #ff7500,
-      0 0 50px #ff4500;
-    animation:glow 2s infinite alternate;
+.gold-line {
+    width: 95px;
+    height: 2px;
+    background: var(--gold);
+    margin: 24px auto;
 }
 
-@keyframes glow{
-    to{
-        text-shadow:
-          0 0 20px #fff0aa,
-          0 0 45px #ff9800,
-          0 0 70px #ff4500;
-    }
+/* Receiver Name */
+
+.receiver {
+    font-family: 'Playfair Display', serif;
+    color: var(--red);
+    font-size: clamp(35px, 9vw, 65px);
+    font-weight: 700;
+    overflow-wrap: anywhere;
+    text-transform: uppercase;
+    margin: 10px 0 20px;
+    text-shadow: 0 3px 15px rgba(143,48,40,.10);
 }
 
-.subtitle{
-    color:#ffdb9a;
-    font-size:23px;
-    margin-top:12px;
+.greeting {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 20px;
+    line-height: 2;
+    color: #745044;
+    margin: 15px auto;
+    max-width: 600px;
 }
 
-/* God images */
+/* Festival Image */
 
-.gods{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:13px;
-    margin:28px auto;
+.festival-image {
+    width: 100%;
+    max-width: 550px;
+    height: 245px;
+    margin: 35px auto 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 12px 35px rgba(80,45,20,.13);
+    border: 5px solid #fffaf0;
 }
 
-.god{
-    width:47%;
-    max-width:260px;
-    height:260px;
-    border:3px solid #eac05b;
-    border-radius:20px;
-    overflow:hidden;
-    background:#5b1b00;
-    box-shadow:0 0 25px #ffae38a0;
-}
-
-.god img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-/* Name */
-
-.name-box{
-    margin:25px auto;
-    padding:20px 10px;
-    border-top:2px solid #e9bc5d;
-    border-bottom:2px solid #e9bc5d;
-    background:#ffad0015;
-}
-
-.name-label{
-    font-size:19px;
-    color:#ffdf9b;
-    margin-bottom:12px;
-}
-
-#bigName{
-    font-size:clamp(42px,11vw,78px);
-    color:#fff0a5;
-    font-weight:bold;
-    overflow-wrap:anywhere;
-    text-shadow:
-      0 0 12px #ffc400,
-      0 0 30px #ff7800;
-    animation:nameGlow 2s infinite alternate;
-}
-
-@keyframes nameGlow{
-    to{transform:scale(1.04);}
+.festival-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Wishes */
 
-.message{
-    font-size:19px;
-    line-height:2;
-    color:#ffe9c0;
-    padding:15px 5px;
+.wishes {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 17px;
+    line-height: 2.1;
+    padding: 15px;
+    color: #795343;
 }
 
-.diyas{
-    font-size:38px;
-    margin:20px 0;
-    animation:float 2s infinite alternate;
+/* Diyas */
+
+.diya-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
 }
 
-@keyframes float{
-    to{transform:translateY(-9px);}
+.diya {
+    font-size: 38px;
+    filter: drop-shadow(0 5px 8px rgba(177,105,24,.25));
 }
 
-/* Input and buttons */
+/* Personalize Section */
 
-input{
-    width:90%;
-    max-width:350px;
-    padding:15px;
-    margin:12px;
-    border:2px solid #e8b84d;
-    border-radius:30px;
-    text-align:center;
-    font-size:17px;
-    outline:none;
+.personalize {
+    max-width: 500px;
+    margin: 45px auto 0;
+    padding: 28px 22px;
+    background: rgba(255,255,255,.65);
+    border: 1px solid #e7d6b7;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(90,50,20,.06);
 }
 
-button{
-    padding:13px 22px;
-    margin:7px;
-    border:none;
-    border-radius:30px;
-    font-size:16px;
-    font-weight:bold;
-    color:#501300;
-    background:linear-gradient(135deg,#fff1b0,#ffb300);
-    box-shadow:0 0 15px #ff9d00a0;
-    cursor:pointer;
+.personalize h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: var(--dark);
+    margin-bottom: 10px;
 }
 
-button:active{
-    transform:scale(.96);
+.personalize p {
+    font-size: 13px;
+    color: #947564;
+    margin-bottom: 18px;
 }
 
-/* Music button */
-
-#musicButton{
-    position:fixed;
-    top:12px;
-    right:12px;
-    z-index:10;
-    padding:12px 15px;
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddc9a6;
+    background: #fffdf8;
+    border-radius: 4px;
+    outline: none;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--dark);
 }
 
-/* First tap overlay */
-
-#startScreen{
-    position:fixed;
-    inset:0;
-    z-index:20;
-    background:#210600ed;
-    display:none;
-    justify-content:center;
-    align-items:center;
-    padding:25px;
+input:focus {
+    border-color: var(--gold);
 }
 
-.start-box{
-    border:2px solid #e8b84d;
-    border-radius:22px;
-    padding:35px 20px;
-    max-width:400px;
-    background:linear-gradient(145deg,#791d00,#300700);
-    box-shadow:0 0 35px #ffb30070;
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
 }
 
-.start-box h2{
-    color:#ffe08a;
-    font-size:30px;
-    margin-bottom:15px;
+.create-btn {
+    background: var(--red);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    margin-top: 12px;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: .3s;
 }
 
-.start-box p{
-    line-height:1.8;
-    margin-bottom:15px;
+.create-btn:hover {
+    background: #68251e;
 }
 
-/* Floating lights */
+/* Share Buttons */
 
-.light{
-    position:fixed;
-    bottom:-40px;
-    z-index:1;
-    pointer-events:none;
-    animation:rise linear forwards;
+.share-area {
+    display: none;
+    margin-top: 20px;
 }
 
-@keyframes rise{
-    to{
-        transform:translateY(-110vh) rotate(360deg);
-        opacity:0;
-    }
+.share-area input {
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.share-buttons button {
+    flex: 1;
+    padding: 13px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+.whatsapp {
+    background: #218b50;
+}
+
+.telegram {
+    background: #2389c7;
+}
+
+.copy {
+    background: #765342;
 }
 
 /* Footer */
 
-.footer{
-    color:#ffda8b;
-    margin-top:25px;
-    line-height:2;
+footer {
+    margin-top: 55px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #a78a6a;
 }
 
-@media(max-width:480px){
-    .god{
-        height:180px;
-    }
+/* Popup */
 
-    .message{
-        font-size:17px;
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(39, 19, 13, .78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    backdrop-filter: blur(7px);
+    transition: opacity .7s, visibility .7s;
+}
+
+.popup-overlay.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.popup {
+    width: 100%;
+    max-width: 420px;
+    background: #fff8e9;
+    border: 5px double #bd984f;
+    padding: 25px 22px 30px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 25px 70px rgba(0,0,0,.3);
+    animation: popupIn .7s ease;
+}
+
+@keyframes popupIn {
+    from {
+        transform: translateY(35px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
+
+.popup::before,
+.popup::after {
+    content: "✦";
+    position: absolute;
+    color: var(--gold);
+    font-size: 25px;
+}
+
+.popup::before {
+    top: 8px;
+    left: 12px;
+}
+
+.popup::after {
+    bottom: 8px;
+    right: 12px;
+}
+
+.god-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 15px auto 20px;
+}
+
+.god-images img {
+    width: 105px;
+    height: 115px;
+    object-fit: contain;
+}
+
+.popup h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: var(--red);
+    margin-bottom: 12px;
+}
+
+.popup .hindi {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #775443;
+    margin-bottom: 20px;
+}
+
+.play-btn {
+    background: linear-gradient(135deg, #a33c2d, #70251d);
+    color: #fff9e9;
+    padding: 17px 30px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    box-shadow: 0 6px 18px rgba(115,37,28,.25);
+    transition: .3s;
+}
+
+.play-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 9px 22px rgba(115,37,28,.35);
+}
+
+.popup .bottom-text {
+    margin-top: 20px;
+    color: #ae8952;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+/* Responsive */
+
+@media(max-width:600px) {
+
+    .container {
+        padding: 55px 17px 30px;
+    }
+
+    .festival-image {
+        height: 190px;
+    }
+
+    .greeting {
+        font-size: 17px;
+    }
+
+    .wishes {
+        font-size: 15px;
+    }
+
+    .personalize {
+        padding: 23px 15px;
+    }
+
+    .share-buttons {
+        flex-wrap: wrap;
+    }
+
+    .share-buttons button {
+        min-width: 28%;
+    }
+
+    .god-images img {
+        width: 90px;
+        height: 100px;
+    }
+
+    .popup h2 {
+        font-size: 26px;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
-<canvas id="fireworks"></canvas>
+<!-- Welcome Popup -->
+
+<div class="popup-overlay" id="welcomePopup">
+
+    <div class="popup">
+
+        <div class="small-label">THE FESTIVAL OF LIGHTS</div>
+
+        <div class="god-images">
+
+            <!-- Add your own high quality deity images -->
+            <img src="assets/ganesh.png"
+                 alt="Lord Ganesha">
+
+            <img src="assets/lakshmi.png"
+                 alt="Maa Lakshmi">
+
+        </div>
+
+        <h2>Happy Diwali!</h2>
+
+        <div class="hindi">
+            शुभ दीपावली! 🪔<br>
+            माँ लक्ष्मी और गणेश जी की कृपा<br>
+            आप सभी पर सदैव बनी रहे।
+        </div>
+
+        <button class="play-btn" id="playButton">
+            🎵 &nbsp; PLAY SONG
+        </button>
+
+        <div class="bottom-text">
+            LIGHT • LOVE • HAPPINESS
+        </div>
+
+    </div>
+
+</div>
+
 
 <!-- Background Music -->
 
-<audio id="bgMusic"
-       src="diwali-song.mp3"
-       autoplay
-       loop
-       playsinline
-       preload="auto">
+<audio id="diwaliMusic" loop preload="auto">
+    <source src="assets/diwali.mp3" type="audio/mpeg">
 </audio>
 
-<button id="musicButton" onclick="toggleMusic()">
-    🔊 संगीत बंद करें
-</button>
 
-<!-- Autoplay fallback -->
+<!-- Main Website -->
 
-<div id="startScreen">
-    <div class="start-box">
-        <h2>🪔 शुभ दीपावली 🪔</h2>
-        <p>
-          आपकी खास दिवाली शुभकामना तैयार है।
-          संगीत सुनने के लिए नीचे स्पर्श करें।
-        </p>
-        <button onclick="startMusic()">
-            🎵 संगीत शुरू करें
-        </button>
-    </div>
-</div>
+<div class="page">
 
-<div class="container">
+    <div class="top-decoration"></div>
 
-<div class="card">
+    <main class="container">
 
-    <div class="top">
-        🪔 शुभ दीपावली 🪔
-    </div>
+        <div class="small-label">
+            A CELEBRATION OF LIGHT & HAPPINESS
+        </div>
 
-    <h1>HAPPY DIWALI</h1>
+        <h1>HAPPY<br>DIWALI</h1>
 
-    <div class="subtitle">
-        ✨ दीपावली की हार्दिक शुभकामनाएँ ✨
-    </div>
+        <div class="gold-line"></div>
 
-    <!-- Lakshmi and Ganesh photos -->
+        <div class="small-label">
+            SPECIAL WISHES FOR
+        </div>
 
-    <div class="gods">
+        <div class="receiver" id="receiverName">
+            EVERYONE
+        </div>
 
-        <div class="god">
+        <div class="greeting">
+            दीपों का यह पावन त्योहार आपके जीवन में<br>
+            सुख, शांति, समृद्धि और खुशियाँ लेकर आए।<br>
+            आपके हर सपने को नई उड़ान मिले।
+        </div>
+
+
+        <!-- Festival Image -->
+
+        <div class="festival-image">
+
             <img
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Lakshmi.jpg"
-              alt="माँ लक्ष्मी जी"
-              onerror="this.src='https://images.unsplash.com/photo-1604608672516-8d0d7f3d2e90?w=600'">
+            src="https://images.unsplash.com/photo-1606293926075-9a1f7c0b1c0b?auto=format&fit=crop&w=1200&q=85"
+            alt="Diwali Celebration"
+            onerror="this.style.display='none'">
+
         </div>
 
-        <div class="god">
-            <img
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Lord_Ganesha.jpg"
-              alt="भगवान गणेश जी"
-              onerror="this.src='https://images.unsplash.com/photo-1606293926075-69a00dbfde81?w=600'">
+
+        <div class="diya-row">
+            <span class="diya">🪔</span>
+            <span class="diya">✨</span>
+            <span class="diya">🪔</span>
         </div>
 
-    </div>
 
-    <div class="name-box">
+        <div class="wishes">
 
-        <div class="name-label">
-            यह खास शुभकामना आपके लिए
+            यह दिवाली आपके घर को रोशनी से,<br>
+            आपके दिल को खुशियों से और<br>
+            आपके जीवन को सफलता से भर दे।<br><br>
+
+            आप और आपका परिवार हमेशा खुश रहें।<br>
+
+            <strong>शुभ दीपावली! ❤️</strong>
+
         </div>
 
-        <div id="bigName">FRIEND</div>
 
-    </div>
+        <!-- Personalization -->
 
-    <div class="diyas">
-        🪔 🌺 🪔
-    </div>
+        <section class="personalize">
 
-    <div class="message">
-        माँ लक्ष्मी जी आपके जीवन में सुख,
-        समृद्धि और खुशियाँ लेकर आएँ।
+            <h2>Send a Special Wish</h2>
 
-        <br>
+            <p>
+                Enter someone's name and create a personalised
+                Diwali greeting link.
+            </p>
 
-        भगवान गणेश जी आपके सभी कार्यों को
-        मंगलमय बनाएँ।
+            <input
+                type="text"
+                id="nameInput"
+                placeholder="Enter receiver's name..."
+                maxlength="40"
+            >
 
-        <br>
+            <button class="create-btn" onclick="createLink()">
+                CREATE GREETING LINK
+            </button>
 
-        आपके घर में हमेशा प्रेम, शांति और
-        खुशियों का उजाला बना रहे।
 
-        <br><br>
+            <div class="share-area" id="shareArea">
 
-        💛 आपको और आपके परिवार को
-        दीपावली की हार्दिक शुभकामनाएँ 💛
-    </div>
+                <input
+                    type="text"
+                    id="generatedLink"
+                    readonly
+                >
 
-    <div class="diyas">
-        ✨ 🪔 ✨
-    </div>
+                <div class="share-buttons">
 
-    <h2 style="color:#ffdf94;margin:25px 0 10px;">
-        अपने खास व्यक्ति के लिए शुभकामना बनाएँ
-    </h2>
+                    <button class="whatsapp" onclick="shareWhatsApp()">
+                        WhatsApp
+                    </button>
 
-    <input
-      type="text"
-      id="nameInput"
-      maxlength="30"
-      placeholder="नाम English में लिखें">
+                    <button class="telegram" onclick="shareTelegram()">
+                        Telegram
+                    </button>
 
-    <br>
+                    <button class="copy" onclick="copyLink()">
+                        Copy Link
+                    </button>
 
-    <button onclick="createWish()">
-        ✨ शुभकामना लिंक बनाएँ
-    </button>
+                </div>
 
-    <br>
+            </div>
 
-    <button onclick="shareWhatsApp()">
-        WhatsApp पर भेजें
-    </button>
+        </section>
 
-    <button onclick="shareTelegram()">
-        Telegram पर भेजें
-    </button>
 
-    <button onclick="copyLink()">
-        🔗 लिंक कॉपी करें
-    </button>
+        <footer>
+            MADE WITH LOVE & LIGHT 🪔
+        </footer>
+
+    </main>
 
 </div>
 
-<div class="footer">
-    🪔 प्रकाश, प्रेम और खुशियों का त्योहार 🪔
-    <br>
-    शुभ दीपावली
-</div>
-
-</div>
 
 <script>
 
-/* PERSONALIZED NAME */
+/* Welcome Popup and Music */
 
-const params = new URLSearchParams(location.search);
-const receiver = params.get("to");
+const popup = document.getElementById("welcomePopup");
+const playButton = document.getElementById("playButton");
+const music = document.getElementById("diwaliMusic");
 
-const bigName = document.getElementById("bigName");
+playButton.addEventListener("click", async function() {
 
-if(receiver){
-    bigName.textContent = receiver;
-    document.title = "Happy Diwali - " + receiver;
-}
-
-
-/* MUSIC AUTOPLAY */
-
-const music = document.getElementById("bgMusic");
-const startScreen = document.getElementById("startScreen");
-const musicButton = document.getElementById("musicButton");
-
-let playing = false;
-
-async function startMusic(){
-
-    try{
+    try {
 
         await music.play();
 
-        playing = true;
+        popup.classList.add("hide");
 
-        startScreen.style.display = "none";
+    } catch(error) {
 
-        musicButton.textContent = "🔇 संगीत बंद करें";
-
-    }catch(error){
-
-        startScreen.style.display = "flex";
+        alert("Unable to play music. Please check your music file.");
 
     }
-
-}
-
-function toggleMusic(){
-
-    if(music.paused){
-        startMusic();
-    }else{
-        music.pause();
-        playing = false;
-        musicButton.textContent = "🎵 संगीत चालू करें";
-    }
-
-}
-
-/* Try autoplay immediately */
-
-window.addEventListener("load",()=>{
-
-    music.play().then(()=>{
-
-        playing = true;
-        musicButton.textContent = "🔇 संगीत बंद करें";
-
-    }).catch(()=>{
-
-        startScreen.style.display = "flex";
-
-    });
 
 });
 
-/* Try again on first interaction */
 
-document.addEventListener("pointerdown",function(){
+/* Personalised Greeting */
 
-    if(music.paused && !playing){
-        startMusic();
-    }
+const params = new URLSearchParams(window.location.search);
 
-},{once:true});
+const receiver = params.get("name");
+
+if(receiver) {
+
+    document.getElementById("receiverName").textContent = receiver;
+
+    document.title = "Happy Diwali " + receiver + " 🪔";
+
+}
 
 
-/* PERSONAL LINK */
+/* Create Personalised Link */
 
-let generatedLink = location.href.split("?")[0];
+let currentLink = "";
 
-function createWish(){
+function createLink() {
 
     const name = document.getElementById("nameInput").value.trim();
 
-    if(!name){
-        alert("कृपया नाम लिखें।");
+    if(!name) {
+
+        alert("Please enter a name first!");
+
         return;
+
     }
 
-    if(!/^[a-zA-Z0-9 ]+$/.test(name)){
-        alert("कृपया नाम English में लिखें।");
-        return;
-    }
+    const url = new URL(window.location.href);
 
-    generatedLink =
-      location.href.split("?")[0] +
-      "?to=" + encodeURIComponent(name);
+    url.searchParams.set("name", name);
 
-    bigName.textContent = name;
+    currentLink = url.toString();
 
-    history.replaceState(null,"",generatedLink);
+    document.getElementById("generatedLink").value = currentLink;
 
-    alert("आपकी शुभकामना तैयार है!");
+    document.getElementById("shareArea").style.display = "block";
 
 }
 
-function shareWhatsApp(){
 
-    const text =
-      "आपके लिए एक खास दिवाली शुभकामना 🪔✨\n" +
-      generatedLink;
+/* WhatsApp Share */
+
+function shareWhatsApp() {
+
+    if(!currentLink) return;
+
+    const name = document.getElementById("nameInput").value.trim();
+
+    const message =
+    "🪔 Happy Diwali " + name + "!\n\n" +
+    "आपके लिए एक खास दिवाली संदेश ❤️\n\n" +
+    currentLink;
 
     window.open(
-      "https://wa.me/?text="+encodeURIComponent(text),
-      "_blank"
+        "https://wa.me/?text=" + encodeURIComponent(message),
+        "_blank"
     );
 
 }
 
-function shareTelegram(){
+
+/* Telegram Share */
+
+function shareTelegram() {
+
+    if(!currentLink) return;
+
+    const message = "🪔 Happy Diwali! Special wishes for you ❤️";
 
     window.open(
-      "https://t.me/share/url?url="+
-      encodeURIComponent(generatedLink),
-      "_blank"
+        "https://t.me/share/url?url=" +
+        encodeURIComponent(currentLink) +
+        "&text=" +
+        encodeURIComponent(message),
+        "_blank"
     );
 
 }
 
-function copyLink(){
 
-    navigator.clipboard.writeText(generatedLink)
-    .then(()=>{
-        alert("लिंक कॉपी हो गया!");
-    })
-    .catch(()=>{
-        prompt("लिंक कॉपी करें:",generatedLink);
-    });
+/* Copy Link */
 
-}
+async function copyLink() {
 
+    if(!currentLink) return;
 
-/* FIREWORKS */
+    try {
 
-const canvas = document.getElementById("fireworks");
-const ctx = canvas.getContext("2d");
+        await navigator.clipboard.writeText(currentLink);
 
-let particles = [];
+        alert("Greeting link copied successfully! 🪔");
 
-function resize(){
+    } catch(error) {
 
-    canvas.width = innerWidth;
-    canvas.height = innerHeight;
+        const input = document.getElementById("generatedLink");
 
-}
+        input.select();
 
-resize();
+        document.execCommand("copy");
 
-window.addEventListener("resize",resize);
-
-function firework(){
-
-    const x = Math.random()*canvas.width;
-    const y = Math.random()*canvas.height*.55;
-
-    const colors = [
-        "#ffcc00",
-        "#ff6600",
-        "#ffffff",
-        "#ff3399",
-        "#00ffff"
-    ];
-
-    const color = colors[
-        Math.floor(Math.random()*colors.length)
-    ];
-
-    for(let i=0;i<45;i++){
-
-        const angle = Math.random()*Math.PI*2;
-        const speed = Math.random()*4+1;
-
-        particles.push({
-            x,y,
-            vx:Math.cos(angle)*speed,
-            vy:Math.sin(angle)*speed,
-            life:65,
-            color
-        });
+        alert("Link copied!");
 
     }
 
 }
-
-function animate(){
-
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-
-    for(let i=particles.length-1;i>=0;i--){
-
-        const p = particles[i];
-
-        p.x += p.vx;
-        p.y += p.vy;
-        p.vy += .025;
-        p.life--;
-
-        ctx.globalAlpha = p.life/65;
-        ctx.fillStyle = p.color;
-
-        ctx.beginPath();
-        ctx.arc(p.x,p.y,2,0,Math.PI*2);
-        ctx.fill();
-
-        if(p.life<=0){
-            particles.splice(i,1);
-        }
-
-    }
-
-    ctx.globalAlpha = 1;
-
-    requestAnimationFrame(animate);
-
-}
-
-animate();
-
-setInterval(firework,850);
-
-
-/* FLOATING DIYAS AND FLOWERS */
-
-function createLight(){
-
-    const light = document.createElement("div");
-
-    light.className = "light";
-
-    light.textContent = ["✨","🌺","🪔","🌟"][
-        Math.floor(Math.random()*4)
-    ];
-
-    light.style.left = Math.random()*100+"vw";
-    light.style.fontSize = (18+Math.random()*18)+"px";
-    light.style.animationDuration = (6+Math.random()*5)+"s";
-
-    document.body.appendChild(light);
-
-    setTimeout(()=>light.remove(),11000);
-
-}
-
-setInterval(createLight,600);
 
 </script>
 
